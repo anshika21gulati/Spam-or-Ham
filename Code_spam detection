@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
-data = pd.read_csv("https://github.com/anshika21gulati/Spam-or-Ham/blob/f2c9a8e8be0c6d41d85d63c842a542317edd16d7/spam.csv")
+data = pd.read_csv("https://github.com/anshika21gulati/Spam-or-Ham/blob/f2c9a8e8be0c6d41d85d63c842a542317edd16d7/spam.csv", encoding= 'latin-1')
 data.head()
 
 data = data[["v1", "v2"]]
